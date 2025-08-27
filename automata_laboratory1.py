@@ -85,3 +85,21 @@ while True:
         result = dfa2.accepts(string)
 
     print(f"Result: {'ACCEPTED ' if result else 'REJECTED '}")
+
+"""
+=== Automaton 1 (0 and 1) ===
+'10': ACCEPTED 
+'101': ACCEPTED 
+'1110': ACCEPTED 
+'1010': REJECTED 
+'1': REJECTED 
+'11': REJECTED 
+
+=== Automaton 2 (a/b) ===
+'ab': ACCEPTED
+'abaa': ACCEPTED
+'abaabb': ACCEPTED
+'aaa': REJECTED
+'abb': REJECTED
+'aba': REJECTED
+"""
